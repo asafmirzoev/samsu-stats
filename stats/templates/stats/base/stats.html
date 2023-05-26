@@ -1,0 +1,149 @@
+{% extends 'stats/base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block content %}
+
+<script src="{% static 'js/stats.js' %}"></script>
+
+<div class="row">
+    
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="row mt-5">
+            <div class="col-6">
+
+                <div class="mb-3">
+                    <label for="faculty">{% trans 'Выберите факультет' %}:</label>
+                    <select id="faculty" name="faculty" class="form-control" required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                        {% for faculty in faculties %}
+                            <option value="{{ faculty.pk }}">{{ faculty.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="course">{% trans 'Выберите курс' %}:</label>
+                    <select id="course" name="course" class="form-control" disabled required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="direction">{% trans 'Выберите направление' %}:</label>
+                    <select id="direction" name="direction" class="form-control" disabled required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="group">{% trans 'Выберите группу' %}:</label>
+                    <select id="group" name="group" class="form-control" disabled required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="semestr">{% trans 'Выберите семестр' %}:</label>
+                    <select id="semestr" name="semestr" class="form-control" disabled required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject">{% trans 'Выберите предмет' %}:</label>
+                    <select id="subject" name="subject" class="form-control" disabled required style="border-color: #212A3E;">
+                        <option value="">----------------</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="teachers">{% trans 'Преподаватели' %}:</label>
+                    <textarea class="form-control" name="teachers" id="teachers" rows="5" disabled style="border-color: #212A3E;"></textarea>
+                    <input type="text" id="_teachers" name="_teachers" value="[]" hidden>
+                </div>
+
+                <div class="mb-3">
+                    <button id="add-teacher-button" type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#add_teacher" style="background-color: #212A3E; color: #F1F6F9;" disabled>{% trans 'Добавить преподавателя' %}</button>
+                </div>
+
+    
+                <div class="mb-3">
+                    <label for="file">{% trans 'Файл ведомости' %}:</label>
+                    <input type="file" id="file" name="file" class="form-control" accept=".xlsx, .xls" disabled required style="border-color: #212A3E;">
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-success w-100">{% trans 'Загрузить' %}</button>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<div class="modal fade text-dark" id="add_teacher" tabindex="-1" aria-labelledby="add_teacher-Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="add_teacher-Label">{% trans 'Добавить преподавателя' %}</h1>
+                <button id="add_teacher_close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" enctype="multipart/form-data" id="add_teacher_form">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label for="t_subject_type">{% trans 'Выберите тип предмета' %}:</label>
+                        <select id="t_subject_type" name="t_subject_type" class="form-control" required>
+                            <option value="">----------------</option>
+                            {% for subject_type_id, subject_type_name in subject_types %}
+                                <option value="{{ subject_type_id }}">{{ subject_type_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="t_faculty">{% trans 'Выберите факультет' %}:</label>
+                        <select id="t_faculty" name="t_faculty" class="form-control" disabled required>
+                            <option value="">----------------</option>
+                            {% for faculty in faculties %}
+                                <option value="{{ faculty.pk }}">{{ faculty.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="t_department">{% trans 'Выберите кафедру' %}:</label>
+                        <select id="t_department" name="t_department" class="form-control" disabled required>
+                            <option value="">----------------</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="t_teacher">{% trans 'Выберите преподавателя' %}:</label>
+                        <select id="t_teacher" name="t_teacher" class="form-control" disabled required>
+                            <option value="">----------------</option>
+
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans 'Закрыть' %}</button>
+                        <button type="submit" class="btn btn-primary">{% trans 'Добавить' %}</button>
+                    </div>
+
+                </form>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'stats/base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'faculties' %}" style="text-decoration: none; color: #212A3E;">{% trans 'Факультеты' %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'faculties' course.faculty.pk %}" style="text-decoration: none; color: #212A3E;">{{ course.faculty.name }}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'courses' course.pk %}" style="text-decoration: none; color: #212A3E;">{% trans 'Курс' %}: {{ course.course }}</a></li>
+            </ol>
+        </nav>
+        <hr style="border-color: #212A3E">
+    </div>
+
+    <div class="row mb-5">
+        <h3 style="color: #212A3E;">{% trans 'Направления' %}: </h3>
+        {% for direction in course.direction_set.all %}
+            <div class="mb-3 col-sm-12 col-md-8 col-lg-6">
+                <div class="card" style="background-color: #212A3E; color: #F1F6F9;">
+                    <div class="card-body" role="button" onclick="location.href=`{% url 'directions' direction.pk %}`">
+                        {{ direction.name }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+{% endblock %}

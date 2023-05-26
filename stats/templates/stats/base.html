@@ -1,0 +1,75 @@
+{% load static %}
+{% load i18n %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% trans 'Статистика СамГУ' %}</title>
+
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+
+    <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+    <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
+    
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<header class="d-flex justify-content-center py-3 mb-4 shadow" style="background-color: #394867;">
+    <ul class="nav nav-pills">
+        <li class="nav-item mr-2"><button onclick="location.href=`{% url 'faculties' %}`" class="btn text-white" style="background-color: #212A3E;">{% trans 'Факультеты' %}</button></li>
+        <li class="nav-item mr-2"><button onclick="location.href=`{% url 'stats' %}`" class="btn text-white" style="background-color: #212A3E;">{% trans 'Загрузить ведомость' %}</button></li>
+        <li class="nav-item mr-2"><a href="{% url 'user_logout' %}" class="nav-link text-white">{% trans 'Выход' %}</a></li>
+        <li class="nav-item dropdown no-arrow">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            <div class="select">
+                {% get_language_info_list for LANGUAGES as languages %}
+                <form action="{% url 'set_language' %}" method="post" class="navbar-form navbar-right">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <select name="language" class="form-select" onchange="this.form.submit()">
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected="selected" {% endif %}>
+                                    {{ language.name_translated }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<body style="background-color: #9BA4B5; color: #F1F6F9;">
+    <div class="container">
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'error' %}
+                    <div class="alert alert-danger" role="alert">{{ message }}</div>
+                {% else %}
+                    <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

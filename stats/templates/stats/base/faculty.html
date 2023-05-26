@@ -1,0 +1,51 @@
+{% extends 'stats/base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'faculties' %}" style="text-decoration: none; color: #212A3E;">{% trans 'Факультеты' %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'faculties' faculty.pk %}" style="text-decoration: none; color: #212A3E;">{{ faculty.name }}</a></li>
+            </ol>
+        </nav>
+        <hr style="border-color: #212A3E">
+    </div>
+
+    <div class="row mb-5">
+        <h3 style="color: #212A3E;">{% trans 'Кафедры' %}: </h3>
+        {% for department in departments %}
+            <div class="mb-3 col-sm-12 col-md-8 col-lg-6">
+                <div class="card" style="background-color: #212A3E; color: #F1F6F9;">
+                    <div class="card-body" role="button" onclick="location.href=`{% url 'departments' department.pk %}`">
+                        {{ department.name }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <hr style="border-color: #212A3E;">
+
+    <div class="row">
+        <h3 style="color: #212A3E;">{% trans 'Курсы' %}: </h3>
+        {% for course in courses %}
+            <div class="mb-3 col-sm-12 col-md-8 col-lg-6">
+                <div class="card" style="background-color: #212A3E; color: #F1F6F9;">
+                    <div class="card-body" role="button" onclick="location.href=`{% url 'courses' course.pk %}`">
+                        {% trans 'Курс' %}: {{ course.course }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+{% endblock %}

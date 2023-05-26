@@ -1,0 +1,782 @@
+{
+    "GEO_60530400_Geografiya bakalavr_2022": {
+        "2": [
+            {
+                "subject_name": "O'zbekistonning yangi tarixi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy tillar (nemis tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (fransuz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (ingliz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "O'zbek (rus) tili",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Inson va tabiat",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy yer bilimi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geofizika va geokimyo asoslari",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geoekologiya asoslari",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy yer bilimi (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60530400_Geografiya bakalavr_2022(kechgi)": {
+        "2": [
+            {
+                "subject_name": "O'zbekistonning yangi tarixi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy tillar (nemis tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (ingliz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "O'zbek (rus) tili",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Inson va tabiat",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy yer bilimi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geofizika va geokimyo asoslari",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "1.Geoekologiya asoslari",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy yer bilimi (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60530500_Geologiya bakalavr_2022": {
+        "2": [
+            {
+                "subject_name": "O'zbekistonning yangi tarixi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy tillar (fransuz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (ingliz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (nemis tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "O'zbek (rus) tili",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Geofizika asoslari",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geologiyada informatsion tizimlar",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Umumiy geologiya",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Tarixiy geologiya",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Gidromexanika",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Umumiy geologiya (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60710400_Ekologiya va atrof-muhit muhofazasi bakalavr_2022": {
+        "2": [
+            {
+                "subject_name": "O'zbekistonning yangi tarixi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy tillar (nemis tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (fransuz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (ingliz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "O'zbek (rus) tili",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Hayvonlar ekologiyasi",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Bioekologiya",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Amaliy ekologiya",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Biosfera ekologiyasi",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Bioekologiya (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60520100_Gidrometeorologiya bakalavr_2022": {
+        "2": [
+            {
+                "subject_name": "O'zbekistonning yangi tarixi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy tillar (fransuz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (nemis tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy tillar (ingliz tili)",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "O'zbek (rus) tili",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Geofizika asoslari",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Gidrometeorologiyada informatsion tizimlar ",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "2.Umumiy gidrologiya",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Gidromexanika",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Umumiy gidrologiya (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60530400-Geografiya bakalavr_2021": {
+        "4": [
+            {
+                "subject_name": "Xorijiy til(nemis tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til (Fransuz)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til(ingliz tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Topografiya, kartografiya va GIS",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Inson va tabiat",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Landshaftshunoslik",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Materiklar va okeanlar tabiiy geografiyasi",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "1.Meliorativ geografiya",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "3.Antropogen landshaftshunoslik",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "2. Turizm geografiya",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60530500-Geologiya bakalavr_2021": {
+        "4": [
+            {
+                "subject_name": "Xorijiy til(ingliz tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til(nemis tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til (Fransuz tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Geokimyo asoslari",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Paleontologiya va stratigrafiya  ",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Mineralogiya va kristallografiya",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geofizikaviy tadqiqot usullari ",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Gidrogeologiya va muhandislik geologiyasi asoslari",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Strukturaviy geologiya va geologik xaritalash",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Boshqa"
+            },
+            {
+                "subject_name": "Strukturaviy geologiya va geologik xaritalash (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_60710400 - Ekologiya bakalavr_2021": {
+        "4": [
+            {
+                "subject_name": "Kimyo",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Xorijiy til (Ingliz tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til(nemis tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Xorijiy til (Fransuz tili)",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Bioekologiya",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Ekologik ekspertiza va monitoring",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O\u2018zbekiston \u201cQizil kitobi\u201d",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Gidrobiologiya va gidroekologiya",
+                "hours": 270,
+                "credits": 9,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy psixologiya",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_5140600_Geografiya bakalavriat_2020": {
+        "6": [
+            {
+                "subject_name": "Jahon iqtisodiy geografiyasi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'rta Osiyo geografiyasi",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'zbekiston geografiyasi",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Sanoat va transport geografiyasi",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Tabiyot va geografiya o\u2018qitish metodikasi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumta\u2019lim darsliklari mazmuni (6-7 sinf)",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Geografik prognoz",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Shaharlar geografiyasi",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Umumiy psixologiya",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            }
+        ]
+    },
+    "GEO_5140800_Geologiya bakalavriat_2020": {
+        "6": [
+            {
+                "subject_name": "Foydali qazilma konlarini qidirish va razvedka qilish",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Foydali qazilmalar geologiyasi",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Geotektonika",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Tarixiy geologiya",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'rta Osiyo geologiyasi",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Petrografiya",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Gidrokimyo",
+                "hours": 270,
+                "credits": 9,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Litologiya",
+                "hours": 270,
+                "credits": 9,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "2. Geomorfologiya ",
+                "hours": 270,
+                "credits": 9,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Foydali qazilma konlarini qidirish va razvedka qilish (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            }
+        ]
+    },
+    "GEO_5150500_Geografiya iqtisodiy bilim asoslari_2020": {
+        "6": [
+            {
+                "subject_name": "Jahon iqtisodiy geografiyasi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'rta Osiyo geografiyasi",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'zbekiston geografiyasi",
+                "hours": 120,
+                "credits": 4,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "O'lkashunoslik",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Tabiyot va geografiya o\u2018qitish metodikasi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy psixologiya",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "3.Sotsial geografiya",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Umumta\u2019lim darsliklari mazmuni (6-7 sinf)",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Geoekologiya asoslari",
+                "hours": 90,
+                "credits": 3,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Jahon iqtisodiy geografiyasi (kurs ishi)",
+                "hours": 30,
+                "credits": 1,
+                "subject_type": "Boshqa"
+            }
+        ]
+    },
+    "GEO_5630100_Ekologiya va atrof-muhit muhofazasi bakalavriat_2020": {
+        "6": [
+            {
+                "subject_name": "Populyatsiyalar ekologiyasi",
+                "hours": 180,
+                "credits": 6,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Ekologiya o'qitish metodikasi",
+                "hours": 210,
+                "credits": 7,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Umumiy pedagogika",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "Ekosistemalar ekologiyasi",
+                "hours": 150,
+                "credits": 5,
+                "subject_type": "Majburiy"
+            },
+            {
+                "subject_name": "3.Tabiatni muxofaza qilish va undan oqilona foydalanish",
+                "hours": 240,
+                "credits": 8,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "2.Iqlim o\u2018zgarishi va ekologik moslashuv",
+                "hours": 240,
+                "credits": 8,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "1.Ijtimoiy ekologiya",
+                "hours": 240,
+                "credits": 8,
+                "subject_type": "Tanlov"
+            },
+            {
+                "subject_name": "Malakaviy amaliyot",
+                "hours": 60,
+                "credits": 2,
+                "subject_type": "Majburiy"
+            }
+        ]
+    }
+}

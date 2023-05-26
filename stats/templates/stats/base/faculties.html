@@ -1,0 +1,35 @@
+{% extends 'stats/base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <!-- <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+    </div> -->
+
+    <div class="row">
+        {% for faculty in faculties %}
+            <div class="mb-3 col-sm-12 col-md-8 col-lg-6">
+                <div class="card" style="background-color: #212A3E; color: #F1F6F9;">
+                    <div class="card-body" role="button" onclick="location.href=`{% url 'faculties' faculty.pk %}`">
+                        {{ faculty.name }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+{% endblock %}

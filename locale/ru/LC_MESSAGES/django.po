@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-23 01:25+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\samdu_stats\settings.py:121 .\stats\choices.py:14
+msgid "Русский"
+msgstr ""
+
+#: .\samdu_stats\settings.py:122
+msgid "Uzbek"
+msgstr ""
+
+#: .\stats\choices.py:7
+msgid "Дневное"
+msgstr ""
+
+#: .\stats\choices.py:8
+msgid "Вечернее"
+msgstr ""
+
+#: .\stats\choices.py:13
+msgid "Узбекский"
+msgstr ""
+
+#: .\stats\choices.py:19
+msgid "Обязательный"
+msgstr ""
+
+#: .\stats\choices.py:20
+msgid "Выборочный"
+msgstr ""
+
+#: .\stats\choices.py:21
+msgid "Другой"
+msgstr ""
+
+#: .\stats\choices.py:26
+msgid "Лекция"
+msgstr ""
+
+#: .\stats\choices.py:27
+msgid "Практика"
+msgstr ""
+
+#: .\stats\choices.py:28
+msgid "Лаборатория"
+msgstr ""
+
+#: .\stats\services.py:116 .\stats\services.py:130
+#: .\stats\templates\stats\base\teacher.html:37
+msgid "Показатель успеваемости"
+msgstr ""
+
+#: .\stats\services.py:117 .\stats\services.py:133
+#: .\stats\templates\stats\base\teacher.html:39
+msgid "Показатель качества"
+msgstr ""
+
+#: .\stats\templates\stats\base.html:10
+msgid "Статистика СамГУ"
+msgstr ""
+
+#: .\stats\templates\stats\base.html:32
+#: .\stats\templates\stats\base\course.html:14
+#: .\stats\templates\stats\base\department.html:14
+#: .\stats\templates\stats\base\direction.html:14
+#: .\stats\templates\stats\base\faculty.html:14
+#: .\stats\templates\stats\base\group.html:14
+#: .\stats\templates\stats\base\semestr.html:18
+#: .\stats\templates\stats\base\teacher.html:18
+msgid "Факультеты"
+msgstr ""
+
+#: .\stats\templates\stats\base.html:33
+msgid "Загрузить ведомость"
+msgstr ""
+
+#: .\stats\templates\stats\base.html:34
+msgid "Выход"
+msgstr ""
+
+#: .\stats\templates\stats\base\course.html:16
+#: .\stats\templates\stats\base\direction.html:16
+#: .\stats\templates\stats\base\faculty.html:42
+#: .\stats\templates\stats\base\group.html:16
+#: .\stats\templates\stats\base\semestr.html:20
+msgid "Курс"
+msgstr ""
+
+#: .\stats\templates\stats\base\course.html:23
+msgid "Направления"
+msgstr ""
+
+#: .\stats\templates\stats\base\department.html:23
+#: .\stats\templates\stats\base\stats.html:65
+msgid "Преподаватели"
+msgstr ""
+
+#: .\stats\templates\stats\base\direction.html:24
+msgid "Группы"
+msgstr ""
+
+#: .\stats\templates\stats\base\faculty.html:22
+msgid "Кафедры"
+msgstr ""
+
+#: .\stats\templates\stats\base\faculty.html:37
+msgid "Курсы"
+msgstr ""
+
+#: .\stats\templates\stats\base\group.html:25
+msgid "Семестры"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:23
+msgid "Семестр"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:31
+msgid "Группа"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:37
+msgid "ФИО Студента"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:45
+msgid "ДФ+МТ"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:46
+msgid "ЯН"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:47
+msgid "Жами балл"
+msgstr ""
+
+#: .\stats\templates\stats\base\semestr.html:48
+msgid "Бахоси"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:20
+#: .\stats\templates\stats\base\stats.html:113
+msgid "Выберите факультет"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:30
+msgid "Выберите курс"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:37
+msgid "Выберите направление"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:44
+msgid "Выберите группу"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:51
+msgid "Выберите семестр"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:58
+msgid "Выберите предмет"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:71
+#: .\stats\templates\stats\base\stats.html:95
+msgid "Добавить преподавателя"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:76
+msgid "Файл ведомости"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:81
+msgid "Загрузить"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:103
+msgid "Выберите тип предмета"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:123
+msgid "Выберите кафедру"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:130
+msgid "Выберите преподавателя"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:138
+msgid "Закрыть"
+msgstr ""
+
+#: .\stats\templates\stats\base\stats.html:139
+msgid "Добавить"
+msgstr ""
+
+#: .\stats\templates\stats\base\teacher.html:29
+msgid "Преподаватель"
+msgstr ""
+
+#: .\stats\templates\stats\base\teacher.html:35
+msgid "Предмет"
+msgstr ""
+
+#: .\stats\templates\stats\base\teacher.html:36
+msgid "Количество студентов"
+msgstr ""
+
+#: .\stats\templates\stats\base\teacher.html:38
+msgid "Студенты с низкой успеваемостью"
+msgstr ""
+
+#: .\stats\templates\stats\base\teacher.html:43
+#: .\stats\templates\stats\base\teacher.html:46
+#: .\stats\templates\stats\base\teacher.html:49
+msgid "Количество"
+msgstr ""
+
+#: .\stats\templates\stats\login.html:8
+msgid "Опрос СамГУ"
+msgstr ""
+
+#: .\stats\templates\stats\login.html:27
+msgid "Вход в панель"
+msgstr ""
+
+#: .\stats\templates\stats\login.html:39
+msgid "Логин"
+msgstr ""
+
+#: .\stats\templates\stats\login.html:42
+msgid "Пароль"
+msgstr ""
+
+#: .\stats\templates\stats\login.html:45
+msgid "Войти"
+msgstr ""

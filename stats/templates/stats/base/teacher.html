@@ -1,0 +1,126 @@
+{% extends 'stats/base.html' %}
+
+{% load i18n %}
+{% load static %}
+{% load votes_tags %}
+
+
+{% block content %}
+
+<script src="{% static 'js/chartbar.js' %}"></script>
+
+<div class="container">
+
+    
+    <div class="row mb-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'faculties' %}" style="text-decoration: none; color: #212A3E;">{% trans 'Факультеты' %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'faculties' teacher.department.faculty.pk %}" style="text-decoration: none; color: #212A3E;">{{ teacher.department.faculty.name }}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'departments' teacher.department.pk %}" style="text-decoration: none; color: #212A3E;">{{ teacher.department.name }}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'teachers' teacher.pk %}" style="text-decoration: none; color: #212A3E;">{{ group.name }}</a></li>
+            </ol>
+        </nav>
+        <hr style="border-color: #212A3E">
+    </div>
+    
+    
+    <div class="row mb-3">
+        <h2 class="text-center"><u>{% trans 'Преподаватель' %}: {{ teacher.name }}</u></h2>
+        <div class="table-responsive card text-center" style="background-color: #F1F6F9;">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2" style="border-color: #212A3E;">#</th>
+                        <th scope="col" rowspan="2" style="border-color: #212A3E;">{% trans 'Предмет' %}</th>
+                        <th scope="col" rowspan="2" style="border-color: #212A3E;">{% trans 'Количество студентов' %}</th>
+                        <th scope="col" colspan="2" style="border-color: #212A3E;">{% trans 'Показатель успеваемости' %}</th>
+                        <th scope="col" colspan="2" style="border-color: #212A3E;">{% trans 'Студенты с низкой успеваемостью' %}</th>
+                        <th scope="col" colspan="2" style="border-color: #212A3E;">{% trans 'Показатель качества' %}</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">{% trans 'Количество' %}</th>
+                        <th scope="col" style="border-color: #212A3E;">%</th>
+
+                        <th scope="col">{% trans 'Количество' %}</th>
+                        <th scope="col" style="border-color: #212A3E;">%</th>
+
+                        <th scope="col">{% trans 'Количество' %}</th>
+                        <th scope="col" style="border-color: #212A3E;">%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for subject_type in teacher.subjecttype_set.all %}
+                        <tr>
+                            <th scope="row" style="border-color: #212A3E;">{{ forloop.counter }}</th>
+                            <td style="white-space: nowrap; border-color: #212A3E;"><a class="link-dark" href="{% url 'semestrs'  subject_type.subject.semestr.pk %}">{{ subject_type.subject.group.name }} ({{ subject_type.subject.name }})</a></td>
+                            <td style="border-color: #212A3E;">{{ subject_type.subject.semestr.group.student_set.count }}</td>
+                            
+                            <td>{{ subject_type.subject.performance_count }}</td>
+                            <td style="border-color: #212A3E;">{{ subject_type.subject.performance }}</td>
+                            <td>{{ subject_type.subject.bad_performance_count }}</td>
+                            <td style="border-color: #212A3E;">{{ subject_type.subject.bad_performance }}</td>
+                            <td>{{ subject_type.subject.quality_count }}</td>
+                            <td style="border-color: #212A3E;">{{ subject_type.subject.quality }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    {% for grade, grade_data in stats.items %}
+                        <tr style="background-color: #50C878;">
+                            <th scope="row" colspan="2" style="border-color: #212A3E;"> {{ grade }}</th>
+                            {% for count in grade_data %}
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td style="border-color: #212A3E;">{{ count }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% comment %}
+    <div class="row mb-3">
+        <h2 class="text-center">{% trans 'Статистика' %}</h2>
+
+        <div class="col-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">{% trans 'Оценки' %}</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="chart-bar-grades">
+                                <canvas id="BarPieChart-grades"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                            {% for grade, data in grades.items %}
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="p-2 my-1" style="background-color: {{ data.color }};"></div>
+                                    </div>
+                                    <div class="col-11">
+                                        {{ grade }}: {{ data.count }}
+                                    </div>
+                                </div>
+                                <hr>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>create_piechart(`{{ grades|js_data|safe }}`, "grades")</script>
+    </div>
+
+    {% endcomment %}
+</div>
+
+{% endblock %}
